@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", "Poppins", sans-serif;
+
+}
+
+/*********** hero section ***********/
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section .hero-img-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img-section img {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-content-section-color-word {
+    background: linear-gradient(90deg, #FFD580, #FF8C00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* color: transparent; */
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.63);
+    /* 0.4 = darkness level */
+    z-index: 1;
+}
+
+.hero-content-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    /* White text so it's visible on image */
+    padding: 20px;
+    z-index: 2;
+}
+
+.hero-content-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-content-section p {
+    font-size: 19px;
+}
+
+.viewtour-btn {
+    background: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    /* Glass blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.viewtour-btn:hover {
+    background: linear-gradient(90deg, #FFD580, #FF8C00);
+    padding: 12px 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: 1px solid #b885487e;
+}
+
+.bookhotel-btn {
+    background: linear-gradient(90deg, #FFD580, #FF8C00);
+    display: inline-block;
+    border: 1px solid #b885487e;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+    border-radius: 12px;
+}
+
+.bookhotel-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    /* Glass blur */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/*********** why travel with us ***********/
+.why-travel {
+    background: #e0e7ff;
+}
+
+.why-travel .first-row h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.withus-color {
+    background: linear-gradient(90deg, #1E90FF, #8A2BE2);
+    /* Blue to Purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.why-travel .first-row p {
+    font-size: 18px;
+    color: #4b5563;
+    opacity: 1;
+}
+
+.why-travel .second-row .bi-people,
+.why-travel .second-row .bi-geo-alt,
+.why-travel .second-row .bi-shield,
+.why-travel .second-row .bi-clock {
+    font-size: 35px;
+    color: white;
+    background: linear-gradient(135deg, #1E90FF, #8A2BE2);
+    padding: 8px 13px;
+    border-radius: 100%;
+
+}
+
+.why-travel .second-row .card {
+    padding-top: 38px !important;
+    padding: 30px;
+    border-radius: 1rem !important;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    height: 270px;
+}
+
+.why-travel .second-row p {
+    color: #4b5563;
+}
+
+.why-travel .second-row .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/*********** featured-destination ***********/
+
+.featured-destination .first-row h1,
+.pakages .first-row h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.featured-destination .first-row p,
+.pakages .first-row p {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.destination-color {
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    /* yahan intensity adjust kar sakte ho */
+    z-index: 1;
+}
+
+.custom-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Hover zoom effect */
+.custom-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Text overlay */
+.featured-destination-card-overlay {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); */
+    color: #fff;
+    z-index: 2;
+}
+
+.featured-destination-card-overlay h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.featured-destination-card-overlay p {
+    margin: 9px 0 0;
+    font-size: 16px;
+}
+
+/*********** Pakages **********/
+.pakages {
+    background: #eff6ff;
+}
+
+.pakages-color {
+    background: linear-gradient(to right, #f39c12, #e74c3c);
+    /* Orange to Red */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.pakages .second-row .card {
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.pakages .second-row .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pakages .second-row .card img {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.tour-card {
+    width: 100%;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rating {
+    color: #555;
+    font-size: 16px;
+}
+
+.rating .bi-star-fill {
+    color: #e67d22cd;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+    color: #222;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #666;
+    font-size: 14px;
+}
+
+.info-item i {
+    margin-right: 6px;
+    color: #666;
+}
+
+.places {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.places li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+}
+
+.places li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e67e22;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/********** first booking **********/
+.first-booking {
+    background: linear-gradient(to right, #1e3c72, #9b59b6);
+}
+
+.hotelstay-color {
+    color: #f1c40f;
+}
+
+.bi-wifi,
+.bi-cup-hot,
+.bi-truck,
+.bi-building {
+    color: #f1c40f;
+    padding-right: 10px;
+}
+
+.first-booking .content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.first-booking .content p {
+    font-size: 18px;
+
+}
+
+.first-booking-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.first-booking .banner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: visible;
+}
+
+.first-booking .banner img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.banner-offer {
+    position: absolute;
+    bottom: -25px;
+    left: -25px;
+    background: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 8px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*********** customer says ***********/
+.customer-say .content .customer-color {
+    font-weight: bold;
+    background: linear-gradient(to right, #e74c3c, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.customer-say .content p {
+    font-size: 18px;
+    color: #555;
+}
+
+.customer-say .row .card {
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
+    background: #faf5ff;
+
+}
+
+.customer-say .row .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: #faf5ff;
+
+}
+
+.rating-star {
+    color: rgb(234 179 8);
+    font-size: 20px;
+}
+
+.info .image img {
+    width: 30%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.info .image .name {
+    padding-left: 10px;
+}
+
+.info .image .name p {
+    color: #555;
+    font-size: 16px;
+}
+
+/*********** how-it-works **********/
+.how-it-work {
+    background: #eff6ff;
+}
+
+.how-it-work .how-it-work-color {
+    background: linear-gradient(to right, #4caf50, #2196f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how-it-work .content i {
+    font-size: 25px;
+    color: white;
+    background: linear-gradient(135deg, #1E90FF, #8A2BE2);
+    padding: 12px 17px;
+    border-radius: 100%;
+}
+
+.how-it-work .content b {
+    font-size: 18px;
+
+}
+
+.how-it-work .content p {
+    font-size: 14px;
+    color: #666;
+
+}
+
+/* Wrapper for the row with background line */
+.how-it-work .second-row {
+    position: relative;
+    padding: 60px 0;
+    /* Top & bottom spacing */
+}
+
+.how-it-work .first-row h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.how-it-work .first-row p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Horizontal gradient line behind cards */
+.how-it-work .second-row::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #1E90FF, #8A2BE2);
+    /* Orange gradient */
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+/* Cards stay above the line */
+.how-it-work .second-row .card {
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
+    z-index: 1;
+    transition: transform 0.3s;
+}
+
+.how-it-work .second-row .card:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border: none;
+}
+
+/*********** contact and help ***********/
+.contact-help .first-row h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.contact-help .first-row p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact-help-color {
+    background: linear-gradient(to right, #2196f3, #9c27b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-help .second-row .card {
+    background: #faf5ff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.contact-help .second-row .card:hover {
+    transform: scale(1.05);
+}
+
+.contact-help .second-row .bi-clock,
+.contact-help .second-row .bi-envelope,
+.contact-help .second-row .bi-telephone,
+.contact-help .second-row .bi-geo-alt {
+    font-size: 35px;
+    color: white;
+    background: linear-gradient(135deg, #1E90FF, #8A2BE2);
+    padding: 8px 13px;
+    border-radius: 100%;
+}
+
+
+.contact-help .second-row .content .comment1 {
+    color: #2563EB;
+    font-size: 16px;
+}
+
+.contact-help .second-row .content .comment2 {
+    color: #555;
+    font-size: 16px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Newsletter Section ---------- */
+.news-letter {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -120px;
+    /* overlap with footer */
+    z-index: 10;
+    background: linear-gradient(135deg, #1E90FF, #8A2BE2);
+    padding: 50px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.newsletter-form input {
+    max-width: 300px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter-form input::placeholder {
+    color: #777;
+    font-size: 15px;
+}
+
+.btn-subscribe {
+    background-color: #fff;
+    color: #0C3B57;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #00A5A9;
+    color: #fff;
+}
+
+/**************** Footer ****************/
+.footer {
+    position: relative;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: #fff;
+    padding-top: 200px;
+    /* space for overlap */
+    padding-bottom: 60px;
+    z-index: 1;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-about {
+    color: #d1d1d1;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #d1d1d1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+    padding-left: 5px;
+}
+
+.footer-contact li {
+    color: #d1d1d1;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer i:hover {
+    color: #ffc107;
+}
+
+
+
+
+
+
+
+
+
+
+/*********** Animation ***********/
+/*********** fade up animation  ***********/
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*********** fade left right animation  ***********/
+
+/* Initial hidden state */
+.fade-left,
+.fade-right {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+/* Left animation */
+.fade-left {
+    transform: translateX(-50px);
+}
+
+/* Right animation */
+.fade-right {
+    transform: translateX(50px);
+}
+
+/* When visible */
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Initial state */
+.fade-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+/* When visible */
+.fade-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
